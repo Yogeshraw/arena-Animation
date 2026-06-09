@@ -1,410 +1,253 @@
 <!doctype html>
 <html>
 <head>
-<title>index</title>
-</head>
-<meta name="viewport"content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+<title> Arena Animation
+</title>
 <style>
+
 body
 {
-padding:0px;
+background:#080b0b;
 margin:0px;
-background:orange;
-color:#fffff0;
-}
+padding:0px;
+display:flex;
+flex-direction:column;
+min-height:100vh;
 
-a:link
+}
+header
 {
-color:black;
-text-decoration:none;
+width:100%;
+height:80px;
+background:#1a1a1a;
+color:white;
+display:flex;
+justify-content:space-between;
+box-sizing:border-box;
+}
+#logo
+{
+transform:translate(35px,30px);
+font-size:24px;
+line-height:6px;
+color:#ffc107;
+}
+p
+{
+font-size:14px;
+margin-left:4px;
+color:white;
 }
 a:visited
 {
-color:black;
+color:white;
 }
-a:hover
+a:link
 {
-background:gray;
-transition:0.05s;
+color:white;
+text-decoration:none;
 }
-header
-{
-display:flex;
-justify-content:space-between;
+nav a:hover{
+color:#38bdf8;
 }
-.logo
-{
-color:#00072d;
+nav a{
+text-decoration:none;
+color:#0f172a;
+margin-left:30px;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+position:relative;
 }
-main
-{
-text-align:center;
-margin-top:250px;
-font-size:30px;
-background:black;
-height:100px;
-padding-top:5px;
-box-sizing:border-box;
+nav a::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-5px;
+width:0%;
+height:2px;
+background:#38bdf8;
+transition:0.3s;
 }
-@media only screen and (max-width:600px)
-{
-body
-{
-//background:gray;
+nav a:hover::after{
+width:100%;
 }
-header
-{
-background:white;
-height:45px;
-box-sizing:border-box;
-
-}
-header span
-{
-color:black;
-}
-ol
-{
-display:none;
-}
-.menu
-{
-//background:cyan;
-padding-right:30px;
-margin-top:8px;
-
-}
-.logo
-{
-font-size:17px;
-padding:12px;
-padding-left:30px;
-text-transform:uppercase;
-font-family:georgia;
-}
-#about
-{
-//background:cyan;
-width:70%;
-height:200px;
-margin:auto;
-font-size:15px;
-margin-top:50px;
-text-align:justify;
-}
-img
-{
-display:block;
-margin-left:auto;
-margin-right:auto;
-width:50%;
-text-align:left;
-}
-#profile img
-{
-margin-top:50px;
-width:30%;
-}
-p1
+#nav
 {
 font-size:18px;
-display:block;
-margin-left:auto;
-margin-right:auto;
-width:50%;
-
+transform:translate(-35px,30px);
+color:white;
+height:25px;
+width:40%;
+word-spacing:30px;
 }
-span
+#front
 {
-color:#cd5646;
+background:url("images/arena.png");
+width:100%;
+height:600px;
+background-size:100% 100%;
 }
-
+footer
+{
+width:100%;
+height:200px;
+background:#1a1a1a;
+margin-top:50px;
+box-sizing:border-box;
 }
 @media only screen and (min-width:601px)
 {
-body
-{
-//background:cyan;
-}
-header
-{
-background:white;
-height:65px;
-box-sizing:border-box;
-
-}
-header span
-{
-color:black;
-}
-main
-{
-display:flex;
-}
-.menu span
-{
-display:none;
-}
-ol
-{
-list-style:none;
-display:flex;
-padding-right:10px;
-
-}
-ol li
-{
-padding-right:24px;
-padding-top:-40px;
-text-align:center;
-}
 .menu
 {
-//background:cyan;
-padding-right:30px;
-margin-top:8px;
-display:flex;
-text-align:center;
+//display:none;
 }
-.logo
-{
-font-size:17px;
-padding:25px;
-padding-left:40px;
-text-transform:uppercase;
-font-family:georgia;
-}
-#about
-{
-//background:gray;
-width:60%;
-height:200px;
-margin:auto;
-font-size:18px;
-margin-top:100px;
-text-align:justify;
-}
-img
-{
-display:block;
-margin-left:auto;
-margin-right:auto;
-width:50%;
-text-align:left;
-}
-#profile img
-{
-margin-top:100px;
-width:70%;
-}
-p1
+#logo
 {
 font-size:24px;
-
 }
-span
-{
-color:#cd5646;
-}
-}
-@media only screen and (min-width:768px)
-{
-body
-{
-//background:gray;
-}
-header
-{
-background:white;
-height:65px;
-box-sizing:border-box;
-
-}
-header span
-{
-color:black;
-}
-main
-{
-display:flex;
+nav{
+display:none;
 }
 .menu span
 {
-display:none;
-}
-ol
-{
-list-style:none;
-display:flex;
-padding-right:10px;
+margin-left:150px;
 
 }
-ol li
+
+h3
 {
-padding-right:24px;
-padding-top:-40px;
-}
-.menu
-{
-//background:cyan;
-padding-right:30px;
-margin-top:8px;
-display:flex;
-}
-.logo
-{
-font-size:17px;
-padding:25px;
-padding-left:40px;
-text-transform:uppercase;
-font-family:georgia;
-}
-#about
-{
-//background:gray;
-width:50%;
-height:210px;
-margin:auto;
+color:#ffc107;
+text-align:center;
+font-family:'montserrat' sans-serif;
+font-weight:700;
 font-size:22px;
-margin-top:150px;
-text-align:justify;
 }
-img
+H2
 {
-text-align:left;
+font-family:'helvetica' ;
+text-align:center;
+margin-top:50px;
 }
-#profile img
+h2 p
 {
-margin-top:120px;
-width:100%;
-margin-left:40px;
+font-size:100px;
+line-height:6px;
 }
-p1
+h1 p
 {
-font-size:24px;
-
+font-size:29px;
+text-align:center;
 }
-span
+h6
 {
-color:#cd5646;
-}
-
-
-}
-@media only screen and (min-width:992px)
-{
-body
-{
-//background:cyan;
-}
-header
-{
-background:white;
-height:65px;
+text-align:center;
+margin-top:80px;
+border:2px solid #ffffff;
+width:27%;
+margin:auto;
+background:#ffc107;
+height:50px;
+border-radius:15px;
+margin-top:100px;
 box-sizing:border-box;
-
-}
-header span
-{
 color:black;
 }
-main
+h6 p
 {
-display:flex;
+padding-top:2px;
+color:black;
 }
-.menu span
+#arena img
+{
+width:16%;
+}
+#arena 
+{
+text-align:center;
+padding-top:10px;
+}
+footer p
+{
+background:black;
+height:30px;
+text-align:center;
+}
+footer
+{
+//position:fixed;
+bottom:0;
+width:100%;
+height:110px;
+}
+}
+@media(min-width:768px)
+{
+.menu
 {
 display:none;
 }
-ol
-{
-list-style:none;
-display:flex;
-padding-right:10px;
 
 }
-ol li
+@media(min-width:992px)
 {
-padding-right:40px;
-padding-top:-40px;
-}
 .menu
 {
-//background:cyan;
-padding-right:30px;
-margin-top:8px;
-display:flex;
+display:none;
 }
-.logo
-{
-font-size:19px;
-padding:25px;
-padding-left:40px;
-text-transform:uppercase;
-font-family:georgia;
-}
-#about
-{
-//background:gray;
-width:45%;
-height:210px;
-margin:auto;
-font-size:22px;
-margin-top:180px;
-text-align:justify;
-}
-img
-{
-text-align:left;
-}
-#profile img
-{
-margin-top:120px;
-width:100%;
-margin-left:120px;
-}
-p1
-{
-font-size:35px;
-
-}
-span
-{
-color:#cd5646;
-}
-
 
 }
 
 </style>
 <header>
-<div class="logo">Arena Animation</div>
+<div id="logo"> Arena Animation<p> GTB NAGAR</p> </div>
+
+<div id="nav">
 <div class="menu">
 <span class="material-symbols-outlined">
 <a href="menu.html">menu</a>
-</span>
-<ol>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About Us</a></li>
-<li><a href="practice.html">Courses</a></li>
-<li><a href="project.html">Student Work</a></li>
-<li><a href="project.html">Contact</a></li>
-</ol>
+</div>
+
+<nav>
+<a href="index1.html">Home</a>
+<a href="index.html">Courses</a>
+<a href="index.html">StudentWork</a>
+<a href="index.html">Placement</a>
+<a href="index.html">Contact</a>
+</nav>
+</div>
+
 </header>
 <body>
 <main>
-
-
-
-<p class="paragraph"> WOrk in Progress</p>
-
+<section>
+<div id="front"> box </div>
+</section>
 </main>
+<h3>
+WELCOME TO ARENA ANIMATION
+</h3>
+<h2>
+<P>CREATE.</P>
+<P style="color:#ffc107" >DESIGN.</P>
+<P>INSPIRE. </P>
+</h2>
+<h1>
+<p>
+Learn Animation,VFX,Gaming,UI/UX & More with Industry Experts in GTB Nagar.
+</P>
+</h1>
+<h6>
+<p>BOOK FREE DEMO</p>
+</h6>
 
 <footer>
-
+<div id="arena">
+<img src="images/logo.png" >
+</div>
+<p> @ 2026 Arena Animation GTB Nagar.All Rights Reserved.
+</p>
 </footer>
 
 </body>
-
 </html>
