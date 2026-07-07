@@ -28,6 +28,7 @@ color:white;
 display:flex;
 justify-content:space-between;
 box-sizing:border-box;
+position:fixed;
 }
 #logo
 {
@@ -51,31 +52,7 @@ a:link
 color:white;
 text-decoration:none;
 }
-nav a:hover{
-color:#38bdf8;
-}
-nav a{
-text-decoration:none;
-color:#0f172a;
-margin-left:30px;
-font-size:16px;
-font-weight:500;
-transition:0.3s;
-position:relative;
-}
-nav a::after{
-content:'';
-position:absolute;
-left:0;
-bottom:-5px;
-width:0%;
-height:2px;
-background:#38bdf8;
-transition:0.3s;
-}
-nav a:hover::after{
-width:100%;
-}
+
 #nav
 {
 font-size:18px;
@@ -104,11 +81,11 @@ padding-bottom:0;
 
 
 }
-@media only screen and (min-width:601px)
+@media only screen and (max-width:600px)
 {
 .menu
 {
-//display:none;
+display:flex;
 }
 #logo
 {
@@ -189,19 +166,109 @@ width:100%;
 height:110px;
 }
 }
-@media(min-width:768px)
+@media only screen and (min-width:601px)
 {
 .menu
 {
 display:none;
 }
+#logo
+{
+font-size:24px;
+}
+nav{
+//display:none;
+}
+.menu span
+{
+margin-left:150px;
+
+}
+
+h3
+{
+color:#ffc107;
+text-align:center;
+font-family:'montserrat' sans-serif;
+font-weight:700;
+font-size:22px;
+}
+H2
+{
+font-family:'helvetica' ;
+text-align:center;
+margin-top:0px;
+}
+h2 p
+{
+font-size:100px;
+line-height:6px;
+}
+h1 p
+{
+font-size:29px;
+text-align:center;
+}
+h6
+{
+text-align:center;
+margin-top:80px;
+border:2px solid #ffffff;
+width:27%;
+margin:auto;
+background:#ffc107;
+height:50px;
+border-radius:15px;
+margin-top:-10px;
+box-sizing:border-box;
+color:black;
+}
+h6 p
+{
+padding-top:2px;
+color:black;
+}
+#arena img
+{
+width:16%;
+}
+#arena 
+{
+text-align:center;
+padding-top:10px;
+}
+footer p
+{
+background:black;
+height:30px;
+text-align:center;
+}
+footer
+{
+//position:fixed;
+bottom:0;
+width:100%;
+height:110px;
+}
+}
+@media(min-width:768px)
+{
+
 
 }
 @media(min-width:992px)
 {
-.menu
+nav
 {
-display:none;
+//background:red;
+font-size:18px;
+//transform:translate(-10px,20px);
+color:white;
+height:25px;
+width:100%;
+word-spacing:30px;
+text-align:end;
+
 }
 
 }
@@ -218,10 +285,10 @@ display:none;
 
 <nav>
 <a href="index1.html">Home</a>
-<a href="index.html">Courses</a>
-<a href="index.html">StudentWork</a>
-<a href="index.html">Placement</a>
-<a href="index.html">Contact</a>
+<a href="bookmark.html">Courses</a>
+
+
+<a href="contact.html">Contact</a>
 </nav>
 </div>
 
@@ -246,7 +313,7 @@ Learn Animation,VFX,Gaming,UI/UX & More with Industry Experts in GTB Nagar.
 </P>
 </h1>
 <h6>
-<p>BOOK FREE DEMO</p>
+<a href="registration.html"><p>BOOK FREE DEMO</p></a>
 </h6>
 
 <footer>
