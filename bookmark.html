@@ -41,32 +41,32 @@ header{
 
  
 section{
-      min-height:520px;
-      padding:60px 8% 30px;
+      min-height:550px;
+      padding:60px 4% 30px;
     }
 
 section p
 {
 text-align:justify;
-text-indent:70px;
+text-indent:50px;
 word-spacing:3px;
 letter-spacing:1px;
 }
 
 #graphic
 {
-background:black;
+background:#555d50;
 color: white;
 }
 #Animation
 {
-background:black;
+background:#555d50;
 color: white;
 }
 
 #editing
 {
-background:black;
+background:#555d50;
 color: white;
 }
 
@@ -77,10 +77,42 @@ color: white;
 }
 #ui
 {
-background:black;
+background:#555d50;
 color: white;
 }
+.image-row
+{
+  display: flex;
+  width:100%;
+  height: 350px;
+  box-sizing: border-box;
+  gap: 20%;
+  justify-content: center;
+  padding: 50px 0;
+}
+.image-row img
+{
+  flex: 1;
+  width: 150%;
+  max-width:300px;
+  object-fit: cover;
+  height: auto;
 
+  
+}
+.view
+{
+border-radius: 20px;
+}
+a:visited
+{
+color:black;
+}
+a:link
+{
+color:black;
+text-decoration:none;
+}
 </style>
 
 <header>
@@ -92,12 +124,12 @@ Courses
 <a href="#graphic">GRAPHIC DEISGN</a>
 <a href="#3D ">3D ANIMATION</a>
 <a href="#EDITING">VIDEO EDITING</a> 
-<a href="#GAMING">GAMING COURSES</a> 
+
 <a href="#UI&UX">UI/UX DESIGN</a>   
 
 </nav>
 </header>
-<a href="menu.html"><h4>Back</h4></a>
+
 <body>
   
 <main>
@@ -106,12 +138,28 @@ Courses
 
 <p>  VISUAL CONTENT DEVELOPMENT FOR PRINT & SOCIAL MEDIA is a comprehensive program that trains students in all aspects of Graphic Design, Print Design etc. Which makes you a complete design professional. This program exposes you to the fundamentals, techniques and trends in print & publishing required to succeed in the industry.
 </p>
+<div class="image-row"> 
+<img src="images/gpd1.jpg" alt="graphic design preview">
+<img src="images/gpd2.jpg" alt="graphic design preview">
+<img src="images/gpd3.jpg" alt="graphic design preview">
+
+</div>
+<a href="graphic.html"><button id="view">view more
+</button></a>
 </section>
 <a name="3D">
 <section id="Animation">
 <h1>3D ANIMATION </h1>
 <p>
 These courses are for students who wish to enter the Animation industry, and for working people who want to change their field of work or to do better within the Animation industry</p>
+<div class="image-row"> 
+<img src="images/3d1.jpg" alt="graphic design preview">
+<img src="images/3d2.jpg" alt="graphic design preview">
+<img src="images/3d3.jpg" alt="graphic design preview">
+
+</div>
+<a href="animation.html"><button id="view">view more
+</button></a>
 </section>
 
 
@@ -122,18 +170,29 @@ VIDEO EDITING
 </h1>
 <p>Motion Graphic Design is a comprehensive program that trains students in all aspects of Design – Print Design, Motion Graphic Design etc. which makes you a complete design professional. This program exposes you to the fundamentals, techniques and trends in Digital Media required to succeed in the industry.
 </p>
+<div class="image-row"> 
+<img src="images/vd1.jpg" alt="graphic design preview">
+<img src="images/vd2.jpg" alt="graphic design preview">
+<img src="images/vd3.jpg" alt="graphic design preview">
+
+</div>
+<a href="video.html"><button id="view">view more
+</button></a>
 </SECTION>
-<a name="GAMING">
-<section id="gaming">
-<h1>GAMING </h1>
-<p>
-Learn game development on the award-winning unreal engine used by game professionals & studios worldwide to create world’s top games.</p>
-</section>
+
 <a name="UI&UX">
 <section id="ui">
 <h1>UI/UX DESIGN </h1>
 <p>
 Want to learn UI-UX Design from Scratch. Arena offers a comprehensive course that trains you on all aspects of user interface and user experience design to make you job ready. While UI design is about the look and feel of the website or app, UX design improves the overall experience of the users when they interact with the website or app. With Arena Animation’s UI-UX Design course, you will learn end-to-end aspects of user interface and user experience design.</p>
+<div class="image-row"> 
+<img src="images/ui1.jpg" alt="graphic design preview">
+<img src="images/ui2.jpg" alt="graphic design preview">
+<img src="images/ui3.jpg" alt="graphic design preview">
+
+</div>
+<a href="ui ux.html"><button id="view">view more
+</button></a>
 </section>
 
 </main>
@@ -141,7 +200,7 @@ Want to learn UI-UX Design from Scratch. Arena offers a comprehensive course tha
 <footer>
 </footer>
 
-<a href="#top">Go Top</a>
+<a href="menu.html" style="text-align: center;">Back</a>
 </body>
 
 
