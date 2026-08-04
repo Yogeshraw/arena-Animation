@@ -6,13 +6,23 @@
     <title>registration form</title>
 </head>
 <style>
+    a:visited
+{
+color:white;
+}
+a:link
+{
+color:white;
+text-decoration:none;
+}
 body
 {
 margin:0px;
 padding:0px;
-background:black;
+background:#555d50;
+color: white;
 }
-h6
+h3
 {
 text-align:center;
 }
@@ -28,11 +38,14 @@ box-sizing:border-box;
 }
 main
 {
-background:#fffff0;
-width:40%;
+
+background:#454d40;
+width:32.5%;
 margin:auto;
 margin-top:50px;
-height:600px;
+height:500px;
+padding-top: 27px;
+box-sizing: border-box;
 }
 caption
 {
@@ -42,20 +55,23 @@ font-family:arial black;
 table
 {
 margin:auto;
-//background:teal;
+
 padding-top:25px;
 }
 input[type="text"],[type="data"],
 [type="file"],[type="email"],[type="password"]
 {
 
+background: lightgray;
 padding:1px;
 margin-top:10px;
-width:90%;
+width:100%;
 }
 input[type="submit"]
 {
-margin-left:200px;
+margin-left:55px;
+background:white;
+width: 50%;
 }
 date,select,datalist,Date of Birth
 {
@@ -65,10 +81,7 @@ label
 {
 font-family:roman times new;
 }
-input:required:invalid
-{
-//border-color:red;
-}
+
 input:required:valid
 {
 border-color:green;
@@ -86,7 +99,9 @@ font-size:15px;
 }
 main
 {
-width:85%;
+width:65%;
+padding-top: 30px;
+box-sizing: border-box;
 }
 td
 {
@@ -94,7 +109,7 @@ font-size:10px;
 }
 input[type="submit"]
 {
-margin-left:140px;
+margin-left:45px;
 }
 input[type="text"],[type="data"],
 [type="file"],[type="email"],[type="password"]
@@ -102,7 +117,7 @@ input[type="text"],[type="data"],
 
 padding:1px;
 margin-top:10px;
-width:70%;
+width:100%;
 }
 input[list="country"]
 {
@@ -110,15 +125,15 @@ width:68%;
 }
 main
 {
-height:500px;
+height:450px;
 }
 }
 </style>
 
 <body>
-<h6>
+<h3>
 <a href="index.html">
-Back</a></h6>
+Back</a></h3>
     <main>
 <table border="0">
 <caption><u>Login Form</u></caption>
@@ -158,21 +173,13 @@ Back</a></h6>
 </tr>
 <tr>
 <td><label for="password">Password</label></td>
-<td><label for="confirm password">Confirm Password</label></td>
+
 </tr>
 <tr>
 <td><input required type="password" placeholder="Enter your password.." title="enter password here.." ></td> 
-<td><input required type="password" placeholder="Enter your password.." title="enter password here.." ></td> 
-</tr>
 
-
-<tr>
-<td><label for="message">Messsage</label></td></tr>
-<tr>
-<td><textarea rows="5" cols="30">Type text here</textarea></td>
-</tr>
-<tr>
-<td><input type="submit" value="login"><input type="reset"></td>
+<tr >
+<td ><input type="submit" value="login"></td>
 </tr>
 </form>
 </table>
